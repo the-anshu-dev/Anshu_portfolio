@@ -1,0 +1,227 @@
+
+  /* Responsive  */
+  @media (max-width:1545px) {
+    header{
+        padding: 22px 4%;
+        transition: 0.2s;
+    }
+    header.sticky{
+        padding: 14px 4%;
+        transition: 0.2s;
+    }
+    section{
+        padding: 50px 4% 40px;
+        transition: 0.2s;
+    }
+    .container{
+        padding: 30px 4% 50px;
+    }
+  }
+
+  @media (max-width:1180px){
+    :root{
+        --big-font: 4rem;
+        --h2-font: 2.2rem;
+        --p-font: 15px;
+    }
+    .home{
+        height: 85vh;
+    }
+  }
+  
+  @media (max-width:1060px){
+    :menu-icon{
+        display: initial;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: var(--other-color);
+        transition: all 0.5s ease;
+    }
+
+    .navlist a{
+        /* display: none; */
+        display: block;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-left: 2px solid var(--main-color);
+
+    }
+    .navlist.open{
+        top: 100%;
+    }
+  }
+
+  @media (max-width:1045px){
+    :root{
+        --big-font: 3.3rem;
+        --h2-font: 2rem;
+    }
+    .home-img img, .about-img img{
+        width: 100%;
+        max-width: 490px;
+        height: auto;
+    }
+   .home{
+    height: 70vh;
+   }
+  }
+
+  @media (max-width:860px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 118vh;
+    }
+    .home-text{
+        padding-top: 60px;
+    }
+    .home-img{ text-align: center;}
+
+    .about{ grid-template-columns: 1fr;}
+
+    .about-img{text-align: center;}
+  }
+
+
+  /* NOT IS USE  */
+  @media (max-width:520px){
+    .contact-img{
+        gap: 1.5rem;
+    }
+
+    .contact-img img{
+        width: 100%;
+        max-width: 170px;
+        height: auto;
+    }
+
+    .social i{margin: 0 10px;}
+
+    .contact-text{max-width: 100%;}
+
+    .details{gap: 1.5rem;}
+  }
+
+  @media (max-width:475px){
+    :root{
+        --big-font: 2.8rem;
+        --h2-font: 2rem;
+    }
+  }
+   
+  @media (max-width:440px){
+        .home{height: 100vh; gap: 0.1rem;}
+  }
+
+@media screen and (max-width:360px) {
+    header{
+        padding-top: 50px;
+        /* width: 20%; */
+        padding: 45px 2%;
+    }
+    header .logo i{font-size: 52px;}
+
+    .nav-icons{ padding: 0;}
+    .logo{
+        font-size: 20px;
+    }
+    .home-text h1{
+        margin-top: 286px;
+        font-size: 4em;
+    }
+
+    .btn, .btn2{
+        padding: 24px 32px;
+        margin: 20px;
+        font-size: 1.em;
+    }
+
+    .home-img{margin-left: -34px; margin-top: 113px;}
+
+    .home-img img{ width: 100%;    max-width: 566px;  height: auto;  margin-left: 29px;}
+
+   
+  .container{
+    display: flex;
+    padding-top: 1146px;
+    padding-bottom: 337px;
+  }
+
+  .bdr{
+    padding-left: 162px;
+    margin-right: -25px;
+  }
+  .container h3, .title7815{
+    margin-left: -132px;
+    margin-top: -29px;
+    font-size: 14px;
+      }
+
+      /* .middle-text{
+        margin-left: 242px;
+        padding-right: 0;
+      }
+       */
+
+       .shop{ margin-top: 200px;}
+.middle-text h4, .middle-text h2, .shop-content, .contact-text h2{ margin-right: -265px;}
+
+
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.shop-content{ padding-right:17px ;}
+
+.row:nth-child(4) img{
+    margin-top: 19px;
+    padding-bottom: 16px;
+    margin-left: 30px;
+    width: 200px;
+}
+.row-btn .btn{
+    padding: 23px 11px;
+    margin-right: -254px;
+    margin-top: -27px;
+}
+     
+.review{
+    margin-top: 400px;
+    margin-bottom: 500px;
+}
+
+.about-text{
+    margin-top: 56px;
+}
+
+.about-text p{ font-size: 20px;}
+
+.contact-text p, .social{ margin-right: -256px;
+padding-right: 5px;}
+
+iframe { width: 174%; margin-left: -104px;}
+     
+
+.contact {
+    margin-bottom: 158px;
+}
+.details { gap: 3.2rem;}
+
+#___ytsubscribe_0{
+    font-size: 200px;
+
+}
+   
+}
+  

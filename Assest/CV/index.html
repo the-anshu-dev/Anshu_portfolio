@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Anshu Chaurasia</title>
+
+    <style>
+        .certLink{
+            color: aliceblue; 
+        }
+       .certLink:hover{
+            color: blueviolet!important;
+            font-size: 15px;
+            transition: 0.5s ease-out;
+        }
+        .hr{
+            
+            margin-top: -6px;
+        }
+
+        .skills__name:hover,
+        .home__profession:hover,
+        .home__title:hover{
+            color: goldenrod;
+            cursor: pointer;
+        }
+        .home__information:hover,
+            .info:hover {
+            color: rgb(125, 225, 160) !important;
+        }
+        .experience__description:hover, 
+            .certificate__description:hover{
+            color:rgb(141, 233, 202);
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Anshu</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="bx bx-home nav__icon"></i>Home
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class="bx bx-user nav__icon"></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="bx bx-book nav__icon"></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="bx bx-receipt nav__icon"></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class="bx bx-award nav__icon"></i>Certificates
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#refrences" class="nav__link">
+                            <i class="bx bx-link-external nav__icon"></i>References
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="nav__toogle" id="nav-toggle">
+                <i class="bx bx-grid-alt nav__icon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/img.jpg" alt="" class="home__img">
+
+                            <h1 class="home__title">Anshu <b>Chaurasia</b></h1>
+                            <h3 class="home__profession">MERN Developer</h3>
+
+                          
+
+                            <div class="home__address bd-grid" style="text-align: left;">
+                                <span class="home__information">
+                                    <i class="bx bx-map home__icon"></i><a class="info" href="https://goo.gl/maps/TQR6S2F7YrJsQ6Ti9" target="_blank" style="text-decoration: none; color: #BFBFBF;">Adarsh Vihar Lko, UP, 226017</a>
+                                </span>
+                                <span class="home__information">
+                                    <i class="bx bx-envelope-open home__icon"></i><a class="info" href="mailto:anshuchaurasia210@gmail.com;" style="text-decoration: none; color: #BFBFBF;">anshuchaurasia210@gmail.com</a>
+                                </span>
+                                <span class="home__information">
+                                    <i class="bx bx-phone home__icon"></i><a class="info" href="tel:916392457271" style="text-decoration: none; color: #BFBFBF;">+91 - 63924 57271</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Theme change button -->
+                    <!-- <i class="bx bx-moon change-theme" title="Theme"  id="theme-button"></i> -->
+
+
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button" onclick="window.print()"></i>
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+
+                    <h2 class="section-title">SOCIAL</h2>
+
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <a href="https://www.instagram.com/_p_a_n_d_e_m_i_c_/" target="_blank" class="social__link">
+                                    <i class="bx bxl-instagram social__icon" style="color: rgb(232, 96, 119);"></i>instagram </a>
+                            </li>
+                            
+                            <li class="skills__name">
+                                <a href="https://www.linkedin.com/in/anshu-chaurasia-089576255/" target="_blank" class="social__link">
+                                    <i class="bx bxl-linkedin social__icon" style="color: rgb(97, 162, 203);"></i>Linkedin
+                                </a>
+                            </li>
+
+                            <li class="skills__name">
+                                <a href="https://www.facebook.com/profile.php?id=100015280038079" target="_blank" class="social__link">
+                                    <i class="bx bxl-facebook social__icon" style="color: rgb(106, 106, 221);"></i>Facebook
+                                </a>
+                            </li>
+
+                            <li class="skills__name">
+                                <a href="https://twitter.com/iamnot07" target="_blank" class="social__link">
+                                    <i class="bx bxl-twitter social__icon" style="color: #654ea3;"></i>Twitter
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <a href="mailto:anshuchaurasia210@gmail.com;" target="_blank" class="social__link">
+                                    <i class="bx bx-envelope-open social__icon" style="color: rgb(123, 213, 199);"></i>Mail </a>
+                            </li>
+                            
+                            <li class="skills__name">
+                                <a href="https://github.com/Code-Village07" target="_blank" class="social__link">
+                                    <i class="bx bxl-github social__icon" style="color: rgb(227, 146, 221);"></i>Github
+                                </a>
+                            </li>
+
+                            <li class="skills__name">
+                                <a href="https://codepen.io/code-village07" target="_blank" class="social__link">
+                                    <i class="bx bxl-codepen social__icon" style="color: rgb(117, 114, 114);"></i>Codepen
+                                </a>
+                            </li>
+
+                            <li class="skills__name">
+                                <a href="https://www.youtube.com/@codevillage" target="_blank" class="social__link">
+                                    <i class="bx bxl-youtube social__icon" style="color: rgb(219, 49, 49);"></i>Youtube
+                                </a>
+                            </li>
+
+                          
+
+                        </ul>
+                    </div>
+
+                    <!-- <div class="social__container bd-grid">
+
+                        
+                        
+                        
+                    </div> -->
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+
+                    <p class="profile__description">
+                        I am a person, responsible with their work during working hours. Finish various technical and
+                        higher studies at large universities. I have several years of experience and achievements in the
+                        labor field.
+                    </p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education__container bd-grid">
+                       <div class="education__content">
+                        <div class="education__item">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Bachlore of Engineering [CSE]</h3>
+                            <span class="education__studies">APJ Kalam Technical University</span>
+                            <span class="education__year">2020 - 2024</span>
+                        </div>
+                       </div>
+
+
+                       <div class="education__content">
+                        <div class="education__item">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">WEB Developer</h3>
+                            <span class="education__studies">Infosys</span>
+                            <span class="education__year">2022 - 2023</span>
+                        </div>
+                       </div>
+
+
+                       <div class="education__content">
+                        <div class="education__item">
+                            <span class="education__rounder"></span>
+                            <!-- <span class="education__line"></span> -->
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Master in MERN</h3>
+                            <span class="education__studies">Seek-Solution LLP</span>
+                            <span class="education__year">2023 - 2024</span>
+                        </div>
+                       </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name" >
+                                <span class="skills_circle" style="background-color: goldenrod;"></span>Reactjs
+                            </li>
+                            
+                            <li class="skills__name">
+                                <span class="skills_circle" style="background-color: goldenrod;"></span>Nodejs
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills_circle" style="background-color: goldenrod;"></span>MongoDB
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills_circle" style="background-color: goldenrod;"></span>Wordpress
+                            </li>
+
+                        </ul>
+
+
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills_circle" style="background-color: goldenrod;"></span>Bootstrap
+                            </li>
+                            
+                            <li class="skills__name">
+                                <span class="skills_circle" style="background-color: goldenrod;"></span>Tailwind
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills_circle" style="background-color: goldenrod;"></span>Firebase
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills_circle" style="background-color: goldenrod;"></span>Expressjs
+                            </li>
+
+                          
+
+                        </ul>
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+
+                    <h2 class="section-title">Experience</h2>
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">MASTER OF WORDPRESS</h3>
+                                <span class="expeience__company">From 4/22 to 8/23  &#160;|  &#160;<span style="color: goldenrod;">Infosys</span> </span>
+                                <p class="experience__description">
+                                    Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">MASTER OF MERN</h3>
+                                <span class="expeience__company">From 2/21 to 10/23 &#160; | &#160; <span style="color: goldenrod;">SeekSolution LLP</span> </span>
+                                <p class="experience__description">
+                                    The best work experience I got from this company with N-number of projects i cover under this company and best part of about this company is, they provide assests more than other companies.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">MASTER OF Canva / Figma</h3>
+                                <span class="expeience__company">From 8/21 to 8/23 &#160;|  &#160;<span style="color: goldenrod;">Canva and Figma Officials</span> </span>
+                                <p class="experience__description">
+                                    I made UI from Canva with premium access and use in my deployed website.. also I use Figma as to edit yt videos
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>   
+                    
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">
+                              <span style="color: goldenrod;">O</span>  Infosys  HTML5, CSS3, JS and Bootstrap &#160;&#160;&#160;  | &#160;<span style="color: goldenrod;">Infosys</span> &#160;|&#160; 
+                                <a href="assets/pdf/Infosys 1.pdf" class="certLink">Visit <i class='bx bx-link-external'></i></a>
+                            </h3>
+                            <h4 class="hr">7h 35min</h4>
+                            <p class="certificate__description">
+                                Through this training I learn how to create a running website including the UI, Front and back end. It will help me to learn how to create faster, beautiful, and responsive websites.
+                            </p>
+                        </div>
+
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">
+                                <span style="color: goldenrod;">O</span> Infosys  Responsive HTML5 CSS3 and JS &#160;&#160;&#160;  | &#160;<span style="color: goldenrod;">Infosys</span> &#160;|&#160; 
+                                <a href="assets/pdf/Infosys 2 Responsive.pdf" class="certLink">Visit <i class='bx bx-link-external'></i></a>
+                            </h3>
+                            <h4 class="hr">5h 30min</h4>
+                            <p class="certificate__description">
+                                 Here, I learn how to get Responsive my Website in all Screen, by usinf @media Query CSS property applying in the HTML file also using of Bootstrap by adding Column or fluid property in it.
+                                </p>
+                        </div>
+
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">
+                                <span style="color: goldenrod;">O</span> Learned React with Redux and Flux &#160;&#160;&#160;  | &#160;<span style="color: goldenrod;">Infosys</span> &#160;|&#160; 
+                                <a href="assets/pdf/3 Infosys Reach and flux.pdf" class="certLink">Visit <i class='bx bx-link-external'></i></a>
+                            </h3>
+                            <h4 class="hr">3h 51min</h4>
+                            <p class="certificate__description">
+                                Exploring the basics of React to get a sense of how rendering, state management, and data flow work. Then I pull state management out of components as I create my own version of FLUX. 
+                            </p>
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <!--========== REFERENCES ==========-->
+                <section class="references section" id="references">
+                    <h2 class="section-title">Major Projects</h2>
+
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            
+                            <span class="references__subtitle"><span style="color: goldenrod; text-align: center;">O &#160;</span> Adv. Web-Code</span>
+                            <h3 class="references__title">Avinya-Classes</h3>
+                            <ul class="references__contact">
+                                <li>Reference : Netlify</li>
+                                <li>Visit : <a href="https://avinya-classes.netlify.app/" target="_blank" style="color:purple;">avinya-classes.netlify.app</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="references__content bd-grid">
+
+                            <span class="references__subtitle"><span style="color: goldenrod; text-align: center;">O &#160;</span>Adv. React + Flux</span>
+                            <h3 class="references__title">Portfolio</h3>
+                            <ul class="references__contact">
+                                <li>Reference : Netlify</li>
+                                <li>Visit : <a href="https://anshu78.netlify.app/" target="_blank" style="color: purple;">anshu78.netlify.app</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle" style="background-color: goldenrod;"></span>English
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle" style="background-color: goldenrod;"></span>Hindi
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle" style="background-color: goldenrod;"></span>French
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-code-curly interests__icon" style="color: #f1c565;"></i>
+                            <span class="interests__name">
+                                Code
+                            </span>
+                        </div>
+
+                        
+                        <div class="interests__content">
+                            <i class="bx bx-dna interests__icon" style="color: #65f1ec;"></i>
+                            <span class="interests__name">
+                                Analysis
+                            </span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bxl-deezer interests__icon" style="color: #f16565;"></i>
+                            <span class="interests__name">
+                                Music
+                            </span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bx-dumbbell interests__icon" style="color: #ab65f1;"></i>
+                            <span class="interests__name">
+                                Fitness
+                            </span>
+                        </div>
+                       
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+
+    
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

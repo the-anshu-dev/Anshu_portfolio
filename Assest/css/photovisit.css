@@ -1,0 +1,106 @@
+
+
+.box{
+    top: 20%;
+    left: 5%;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+.box::before{
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #ff9f0d, #d400d4);
+    transition: 0.5s;
+    animation:  animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.box:hover::before{
+    inset: -20px 0px;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background-color: #111;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content4{
+    position: absolute;
+    inset: 30px;
+    border: 6px solid rgba(0,0,0,0.5);
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content4 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.box:hover .content4 img{
+    opacity: 0;
+}
+
+.content4 h2{
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content4 h2 span{
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.content4 a{
+    text-decoration: none;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.content4 a:hover{
+    letter-spacing: 0.2em;
+    background: #ff9f0d;
+    transform: 0.5s;
+}

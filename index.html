@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Anshu Portfolio</title>
+
+
+  <script>
+    // Disable right-click context menu
+    window.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+  </script>
+
+
+
+<!-- External CSS  -->
+<link rel="stylesheet" href="Assest/css/portfolio.css">
+<link rel="stylesheet" href="Assest/css/photovisit.css">
+
+<!-- bootstrap  -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+
+
+<!-- Alert System  -->
+<!-- <link rel="stylesheet" href="Assest/css/alertMsg.css"> -->
+
+
+  <style>
+    :root {
+  --offset: 6px;
+}
+
+*, body, html{user-select: none;}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111111;
+}
+
+h2 {
+  width: 980px;
+  font-size: 100px;
+  font-family: Helvetica;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  /* color: #1d1d1f; */
+  color: white;
+}
+
+.mask {
+  height: 106px;
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--offset);
+}
+
+.mask span {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100px;
+  padding-bottom: var(--offset);
+  
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.mask span[data-show] {
+  transform: translateY(-100%);
+  transition: .5s transform ease-in-out;
+}
+
+.mask span[data-up] {
+  transform: translateY(-200%);
+  transition: .5s transform ease-in-out;
+}
+
+.mask span:nth-child(1) {
+  background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1);
+}
+
+.mask span:nth-child(2) {
+  background-image: linear-gradient(45deg, #18e198 50%, #0ec15d);
+}
+
+.mask span:nth-child(3) {
+  background-image: linear-gradient(45deg, #8a7cfb 50%, #633e9c);
+}
+
+.mask span:nth-child(4) {
+  background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+}
+
+
+
+
+
+/* BUTTON ANIMATION  */
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  padding: 15px 25px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+.btn:after, .btn:before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.btn:after {
+  top: 8px;
+  left: 8px;
+  border-top: 3px solid gold;
+  border-left: 3px solid gold;
+}
+.btn:before {
+  bottom: 8px;
+  right: 8px;
+  border-bottom: 3px solid gold;
+  border-right: 3px solid gold;
+}
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.btn:hover:before, .btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+.box {
+    margin-left: 65rem;
+}
+
+.sci{
+        position: relative;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+   .sci li{
+        list-style: none;
+    }
+
+    .sci li a{
+        position: relative;
+        width: 50px;
+        height: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #444; */
+        color: #fff;
+        font-size: 30px;
+        text-decoration: none;
+        /* border-radius: 5px; */
+        transition: 0.5s;
+    }
+
+    .sci li a i{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #444; */
+        color: #fff;
+        text-decoration: none;
+        /* border-radius: 5px; */
+        transition: 0.5s;
+    }
+
+    .sci li a i:hover{color: #ff9f0d;}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+  <h2 >
+  Turn your creative idea into
+  <div class="mask">
+      <span data-show>a real view.</span>
+    <span >a model.</span>
+    <span>a visualization.</span>
+    <span>an arcade.</span>
+  </div>
+  
+</h2>
+
+
+
+
+
+
+
+<section class="about"  style="left: 30px;">
+  <div class="about-img square">
+      <div class="box">
+          <div class="content4">
+              <img src="Assest/img/Anshu5.png" alt="">
+              <h2 >Anshu Chaurasia<br><span>MERN Developer</span></h2>
+              <a href="portfolio.html">Visit</a>
+          </div>
+      </div>
+  </div>
+
+</section>
+
+
+
+<div style="    left: 250px;
+display: inline-block;
+position: absolute;
+margin-top: 869px; opacity: 0.5; letter-spacing: 0.2em; word-spacing: 0.3em; display: none;" id="showme">Hover image to <span style="color: white; border-bottom: 2px dotted red;">visit</span> site.</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    // Function to show the button after 30 seconds
+    function showButton() {
+        var button = document.getElementById("showme");
+        button.style.display = "block"; // Show the button
+        button.style.transition ="ease";
+        
+    }
+
+    // Wait for 07 seconds before showing the button
+    setTimeout(showButton, 8000);
+
+</script>
+
+<!-- Alert msg  -->
+
+
+<!-- Custom Alert Message Container -->
+<!-- <div class="custom-alert" id="customAlert">
+    <div class="alert-content"> 
+        <p>For Better Experience Please Open In DESKTOP MODE</p>
+        <button onclick="closeCustomAlert()" style="background-color: red;">&#x2702;</button>
+    </div>
+</div> -->
+
+
+
+
+<!-- partial -->
+  <script>
+
+setInterval(function () {
+  const show = document.querySelector('span[data-show]')
+  const next = show.nextElementSibling || document.querySelector('span:first-child')
+  const up = document.querySelector('span[data-up]')
+  
+  if (up) {
+    up.removeAttribute('data-up')
+  }
+  
+  show.removeAttribute('data-show')
+  show.setAttribute('data-up', '')
+  
+  next.setAttribute('data-show', '')
+}, 1500)
+  </script>
+
+  <script src="Assest/JS/alertMsg.js"></script>
+
+  
+        <!-- =================================================== -->
+
+        <!-- JS External Script  -->
+        <script src="Assest/JS/jquery.js"></script>
+        <script src="Assest/JS/text-type.js"></script>
+
+        <!-- Team JS  -->
+        <script src="Assest/JS/team.js"></script>
+
+    <!-- JS Script  -->
+    <script>
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", function(){
+            header.classList.toggle("sticky", window.scrolly > 80);
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>

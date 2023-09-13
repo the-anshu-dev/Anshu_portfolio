@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome : Anshu-Portfolio</title>
+
+
+  <script>
+	// Disable right-click context menu
+	window.addEventListener('contextmenu', function (e) {
+	  e.preventDefault();
+	});
+  </script>
+
+  <style>
+	@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+html,
+body {
+	background: mistyrose;
+	overscroll-behavior-x: none;
+	overscroll-behavior-y: none;
+}
+body {
+	font-family: "Asap", sans-serif;
+	position: relative;
+	color: #222;
+	text-align: center;
+
+	overflow-x: hidden;
+}
+section h2 {
+	font-size: 4dvw;
+}
+section p {
+	font-size: 2.8dvw;
+}
+#scroll {
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+}
+canvas {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #222;
+	pointer-events: none;
+	mix-blend-mode: darken;
+}
+main {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+section {
+	position: fixed;
+	overflow: hidden;
+}
+section:nth-of-type(1) {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+section:nth-of-type(2) {
+	top: 10vh;
+	left: 5vw;
+	color: hotpink;
+}
+section:nth-of-type(3) {
+	top: 10vh;
+	right: 5vw;
+	color: dodgerblue;
+}
+section:nth-of-type(4) {
+	bottom: 20vh;
+	right: 10vw;
+	color: peru;
+}
+section:nth-of-type(5) {
+	bottom: 10vh;
+	left: 15vw;
+	color: mediumaquamarine;
+}
+section > div {
+	max-width: 20vw;
+}
+section > div p {
+	color: #222;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: gray;
+	font-size: 2.8dvw;
+	z-index: 2;
+}
+
+#arrow_label {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 1vw;
+	font-size: 2.5dvw;
+	color: #555;
+}
+#arrow {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 2vw;
+	font-size: 8vw;
+	color: #555;
+	transform-origin: center center;
+	transform: rotate(90deg) translateY(-1vw);
+	animation: arrow 0.8s 0s ease infinite;
+}
+@keyframes arrow {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+  </style>
+
+</head>
+<body>
+
+<div id='scroll'></div>
+
+<main>
+	<div>
+		<section>
+			<div>
+				<h2>Welcome!</h2>
+				<p id='arrow_label'>Scroll down</p>
+				<p id='arrow'>&raquo;</p>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h2>1</h2>
+				<p>Let's explore the world with Code.</p>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h2>2</h2>
+				<p>Got stuck in project ?</p>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h2>3</h2>
+				<p>Need me ? <br> Scroll Down and Visit.</p>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h2>4</h2>
+				<p><a  href="portfolio.html" style="text-decoration: none; color: #222; font-weight: 600;">Visit Here</a></p>
+			</div>
+		</section>
+	</div>
+</main>
+<footer>
+	<p>@AnshuChaurasia</p>
+</footer>
+
+<canvas id='matterjs'></canvas>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js'></script>
+<script>
+
+	
+"use strict";
+
+!(function () {
+	function t() {
+		(R.style.height = 100 * m.length * B + "vh"),
+			(s = window.innerWidth),
+			(d = window.innerHeight),
+			(o = u.create()),
+			(n = o.world),
+			(r = w.create({
+				canvas: document.querySelector("#matterjs"),
+				engine: o,
+				options: {
+					width: s,
+					height: d,
+					wireframes: !1,
+					background: "#222",
+					pixelRatio: window.devicePixelRatio
+				}
+			})),
+			(a = p.create()),
+			p.run(a, o),
+			(n.gravity.scale = 0),
+			(n.gravity.x = 0),
+			(n.gravity.y = 0),
+			(l = Math.ceil(e(12))),
+			(c = 1),
+			(S = Matter.Bodies.circle(s / 2, d / 2, l, {
+				isStatic: !0,
+				render: {
+					fillStyle: v,
+					strokeStyle: v,
+					lineWidth: 0
+				},
+				plugin: {
+					attractors: [
+						function (t, e) {
+							return {
+								x: 1e-6 * (t.position.x - e.position.x),
+								y: 1e-6 * (t.position.y - e.position.y)
+							};
+						}
+					]
+				}
+			})),
+			h.add(n, S),
+			(b = document.body.clientHeight),
+			(b += d),
+			i(!0),
+			w.run(r),
+			x.on(o, "afterUpdate", function () {
+				k.position &&
+					k.position.x &&
+					M.translate(S, {
+						x: 0.1 * (k.position.x - S.position.x),
+						y: 0.1 * (k.position.y - S.position.y)
+					});
+			}),
+			(function () {
+				let t = Math.ceil(e(0.8));
+				c = 1;
+				let i = y.stack(
+					s / 2 - (11 * t * 2 + 0) / 2,
+					d / 2 - (11 * t * 2 + 0) / 2,
+					11,
+					11,
+					0,
+					0,
+					function (e, i) {
+						return g.circle(
+							e,
+							i,
+							t,
+							{
+								mass: 0.05,
+								friction: 0,
+								frictionAir: 0.01,
+								render: {
+									lineWidth: 0
+								}
+							},
+							!0
+						);
+					}
+				);
+				f.add(n, i);
+			})();
+	}
+	function e(t) {
+		return Math.round((t * s) / 100);
+	}
+	function i(t = !1) {
+		let e = window.pageYOffset + d;
+		e = Math.abs(Math.round(e / b));
+		let i = 0,
+			n = {
+				position: {
+					x: 0,
+					y: 0
+				}
+			},
+			o = 1;
+		for (; m; ) {
+			if (e <= o * B) {
+				i = o;
+				break;
+			}
+			o++;
+		}
+		if (t || W != i) {
+			let t = m[(W = i) - 1].getBoundingClientRect();
+			(n.position.x = t.left + t.width / 2),
+				(n.position.y = t.top + t.height / 2),
+				(k = n);
+		}
+	}
+	Matter.use("matter-attractors");
+	let n,
+		o,
+		r,
+		a,
+		s,
+		d,
+		c,
+		l,
+		h = Matter.World,
+		u = Matter.Engine,
+		w = Matter.Render,
+		p = Matter.Runner,
+		y = Matter.Composites,
+		f = Matter.Composite,
+		g = Matter.Bodies,
+		M = Matter.Body,
+		x = Matter.Events,
+		v = "white";
+	const m = document.querySelectorAll("section"),
+		R = document.querySelector("#scroll");
+	let S,
+		W = 1,
+		b = 0,
+		k = {
+			position: {
+				x: 0,
+				y: 0
+			}
+		},
+		B = 2.5;
+	window.addEventListener("scroll", i),
+		(window.onload = () => {
+			t();
+		});
+	window.onresize = () => {
+		(s = window.innerWidth),
+			(d = window.innerHeight),
+			r &&
+				((r.options.width = s),
+				(r.options.height = d),
+				(r.canvas.width = s),
+				(r.canvas.height = d),
+				w.setPixelRatio(r, window.devicePixelRatio));
+	};
+})();
+</script>
+
+
+
+</body>
+</html>

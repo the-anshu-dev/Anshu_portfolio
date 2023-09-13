@@ -1,0 +1,307 @@
+
+      .menu{
+         position: relative;
+         width: 200px;
+         height: 200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+      }
+
+      .menu li{
+         position: absolute;
+         list-style: none;
+         transform-origin: 100px;
+         left: 0;
+         top: 75px;
+         transition:  0.5s;
+         transition-delay: calc(0.1s * var(--i));
+         transform: rotate(0deg) translateX(80px);
+      }
+      
+      .menu.active li{
+         transform: rotate(calc(360deg / 8* var(--i)));
+         animation: ani 10s linear infinite;
+      }
+      @keyframes ani{
+         0%{rotate: 360deg;}
+          100%{rotate: 0deg;}
+      }
+
+      .menu li a{
+         color: gold;
+         font-size: 1.5em;
+        
+
+      }
+
+
+     
+      .toggle{
+         position: absolute;
+         width: 60px;
+         height: 60px;
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 10000;
+         border-radius: 50%;
+         cursor: pointer;
+         font-size: 2em;
+         transition: transform  1.25s;
+      }
+
+      .menu.active .toggle{
+         transform: rotate(315deg);
+      }
+
+
+
+
+
+      /* 2nd  */
+
+      .menu1{
+         position: relative;
+         width: 200px;
+         height: 200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .menu1 li{
+         position: absolute;
+         list-style: none;
+         transform-origin: 100px;
+         left: 0;
+         top: 75px;
+         transition:  0.5s;
+         transition-delay: calc(0.1s * var(--i));
+         transform: rotate(0deg) translateX(80px);
+      }
+      
+      .menu1.active1 li{
+         transform: rotate(calc(360deg / 8* var(--i)));
+         animation: ani1 10s linear infinite;
+      }
+      @keyframes ani1{
+         0%{rotate: 0deg;}
+          100%{rotate: 360deg;}
+      }
+
+      .menu1 li a{
+         color: gold;
+         font-size: 1.5em;
+        
+
+      }
+
+
+     
+      .toggle1{
+         position: absolute;
+         width: 60px;
+         height: 60px;
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 10000;
+         border-radius: 50%;
+         cursor: pointer;
+         font-size: 2em;
+         transition: transform  1.25s;
+      }
+
+      .menu1.active1 .toggle1{
+         transform: rotate(315deg);
+      }
+
+
+      /* 3rd  */
+      .menu2{
+         position: relative;
+         width: 200px;
+         height: 200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .menu2 li{
+         position: absolute;
+         list-style: none;
+         transform-origin: 100px;
+         left: 0;
+         top: 75px;
+         transition:  0.5s;
+         transition-delay: calc(0.1s * var(--i));
+         transform: rotate(0deg) translateX(80px);
+      }
+      
+      .menu2.active2 li{
+         transform: rotate(calc(360deg / 8* var(--i)));
+         animation: ani2 10s linear infinite;
+      }
+      @keyframes ani2{
+         0%{rotate: 360deg;}
+          100%{rotate: 0deg;}
+      }
+
+      .menu2 li a{
+         color: gold;
+         font-size: 1.5em;
+        
+
+      }
+
+
+     
+      .toggle2{
+         position: absolute;
+         width: 60px;
+         height: 60px;
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 10000;
+         border-radius: 50%;
+         cursor: pointer;
+         font-size: 2em;
+         transition: transform  1.25s;
+      }
+
+      .menu2.active2 .toggle2{
+         transform: rotate(315deg);
+      }
+
+
+      .menu, .menu1, .menu2{
+         margin-right: 50px;
+      }
+
+
+     
+
+  
+  /* QR */
+   
+.qr-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+.qr-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.qr-container:hover .qr-overlay {
+  opacity: 1;
+}
+
+.qr-overlay a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.qr-container:hover .qr-overlay a {
+  background-color: #0056b3;
+}
+
+/* .............. */
+.container4545{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            /* border: 2px solid rgb(235, 235, 29); */
+            border-radius: 15px;
+        }
+       
+
+        .copy-text{
+            position: relative;
+            padding: 10px;
+            /* background: #e6e985; */
+            /* border: 1px solid rgb(235, 235, 29); */
+            border-radius: 10px;
+            display: flex;
+        }
+        input{
+            background-color:#b1b1aba3 ;
+            border: none;
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+
+        .copy-text input.text{
+            padding: 10px;
+            font-size: 18px;
+            color: #ffffff;
+            border: none;
+            outline: none;
+        }
+
+        .copy-text button{
+            padding: 10px;
+            background: #5784f5;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .copy-text button:active{
+            background: #800ce2;
+        }
+
+        .copy-text button::before{
+            content: "Copied";
+            position: absolute;
+            top: -45px;
+            right: 0px;
+            background: #5c81dc;
+            padding: 8px 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            display: none;
+        }
+        .copy-text button::after{
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 25px;
+            width: 10px;
+            height: 10px;
+            background: #5c81dc;
+            transform: rotate(45deg);
+            display: none;
+        }
+
+        .copy-text.active button::before,
+        .copy-text.active button::after{
+            display: block;
+        }
+

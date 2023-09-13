@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1.0.1</title>
+
+
+
+    <!-- Prevent From Code inspect  -->
+
+    <!-- Example of no-cache headers -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <script>
+        // Disable right-click context menu
+        window.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+        });
+      </script>
+
+   
+    <!-- External CSS  -->
+    <link rel="stylesheet" href="Assest/css/portfolio.css">
+    <link rel="stylesheet" href="Assest/css/photovisit.css">
+
+    <style>
+        body{
+            background-color:#111111 ;
+        }
+    .sci{
+        position: relative;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+   .sci li{
+        list-style: none;
+    }
+
+    .sci li a{
+        position: relative;
+        width: 50px;
+        height: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #444; */
+        color: #fff;
+        font-size: 30px;
+        text-decoration: none;
+        /* border-radius: 5px; */
+        transition: 0.5s;
+    }
+
+    .sci li a i{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #444; */
+        color: #fff;
+        text-decoration: none;
+        /* border-radius: 5px; */
+        transition: 0.5s;
+    }
+
+    .sci li a i:hover{color: #ff9f0d;}
+
+   
+
+</style>
+  
+</head>
+<body>
+
+  
+
+ 
+
+      
+      
+
+
+      
+
+        <!-- About  -->
+        <section class="about" >
+            <div class="about-img square">
+                <div class="box">
+                    <div class="content4">
+                        <img src="../Assest/img/Anshu5.png" alt="">
+                        <h2>Anshu Chaurasia<br><span>Web Developer</span></h2>
+                        <a href="portfolio.html">Back</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+      
+
+  
+
+    
+
+
+
+
+
+
+
+        <!-- =================================================== -->
+
+        <!-- JS External Script  -->
+            <script src="Assest/JS/jquery.js"></script>
+            <script src="Assest/JS/text-type.js"></script>
+
+            <!-- Team JS  -->
+            <script src="Assest/JS/team.js"></script>
+
+        <!-- JS Script  -->
+        <script>
+            const header = document.querySelector("header");
+            window.addEventListener("scroll", function(){
+                header.classList.toggle("sticky", window.scrolly > 80);
+            });
+        </script>
+</body>
+</html>
